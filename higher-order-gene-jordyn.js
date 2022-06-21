@@ -36,13 +36,47 @@ console.log(niceWork(comboArr))
 // // --> "nicework"
 
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
-// // --> [58, "abcd", true]
-// STRETCH Challenges
+ 
+// Declare a function called onlyTrue
+// Set the parameter as array
+// Use .filter to filter the values of the array and check to see if they meet the conditions stated
+// Console.log to see the return
+
+var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+
+const onlyTrue = (array) => {
+    return array.filter(value => {
+        return value !== false && value !== " " && value !== null && value !==0
+    })
+}
+console.log(onlyTrue(filterArrayValues))
+ 
+ // // --> [58, "abcd", true]
+
+
+
+
+
+ // STRETCH Challenges
 
 // Create a function that takes in a string and returns a new string with all the vowels removed.
-// var str = "javascript is awesome"
+
+// Not completed , needs to be checked
+var str = "javascript is awesome"
+
+
+const noVowels = (array) => {
+    return array.filter(value => {
+        return value !== "a" && value !== "e" && value !== "i" && value !== "o" && value !== "u"
+    })
+}
+console.log(noVowels(str))
+
+
 // // --> "jvscrpt s wsm"
+
+
+
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
 // var arr1 = [3, 7, 10, 5, 4, 3]
 // var arr2 = [7, 8, 2, 1, 5, 4]
