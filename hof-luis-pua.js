@@ -21,3 +21,14 @@ const onlyOdd = (array) =>{
     return array.filter(value => value % 2 !== 0)
 }
 console.log(onlyOdd(arr2))
+
+//Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
+
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// --> "nicework"
+
+const myFilteredArray = (array) => {
+    return array.filter(value => value
+)}
+
+console.log(typeof "myFilteredArray(comboArr)")
