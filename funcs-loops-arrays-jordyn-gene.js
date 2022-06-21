@@ -44,26 +44,61 @@ console.log(oddOnly(testArr2)) // // --> [-7, 3, 5, 13]
 
 var comboArr = [7, "n", true, "i", "c", 10, "e", -388, "w", 3, "o", 0, "r", false, "k"]
 
+// Declare a function
+// Create an empty array to add newly created elements to
+// Iterate over array  and use .push() method
+// Check the data type to make sure it's a string 
+// Give an error message
+// Return letters with .join("")
+// Console.log
 
-
-
-
-
-
-
+const onlyLetters = (array) => {
+    let letters = []
+    for(let i=0; i<array.length; i++)
+    if(typeof array[i] === "string") {
+        letters.push(array[i])
+    }
+    return letters.join("")
+}
+console.log(onlyLetters(comboArr))
 
 // // --> "nicework"
 
 // Create a function that takes in an array of numbers and returns the sum.
-// var addThese1 = [1, 2, 3, 4]
+// Declare a function sumOf
+// Use sum to add all the elements of the array together
+// Created a for loop
+// Returned sum and console.log
+
+var addThese1 = [1, 2, 3, 4]
 // // --> 10
 
-// var addThese2 = []
+var addThese2 = []
 // // --> 0
-// Create a function that takes in an array of numbers and returns the index of the largest number.
-// var indexHighestNumber = [1, 4, 2, 3]
-// // --> 1
 
+const sumOf = (array) => {
+    let sum = 0
+    for(let i=0; i<array.length; i++) {
+        sum += array[i]
+    }
+    return sum
+}
+console.log(sumOf(addThese1))
+console.log(sumOf(addThese2))
+
+
+// Create a function that takes in an array of numbers and returns the index of the largest number.
+var indexHighestNumber = [1, 4, 2, 3]
+// // --> 1
+//Declare a function
+// Use Math.max to find the largest number
+//Use indexOf to find the index of largest number
+// Console.log
+
+const largestNum = Math.max.apply(null, indexHighestNumber)
+const index = indexHighestNumber.indexOf(largestNum)
+
+console.log(index)
 // STRETCH Challenges
 
 // Create a function that takes in two arrays and returns one array with no duplicate values.
