@@ -259,11 +259,13 @@ const divisibleBy = (num15, num16) => {
 describe("fizzbuzz", () => {
     it("takes in a number, if it is a multiple of 3 it returns fizz, if its a multiple of 5 it returns buzz and if its a multiple of 3 and 5 it returns fizzbuzz", () => {
 
-        expect(fizzbuzz(num22)).toEqual("fizzbuzz" || "fizz" || "buzz")
+        const inputFizz = 15
+
+        expect(fizzbuzz(inputFizz)).toEqual("fizzbuzz" || "fizz" || "buzz")
     })
 })
 
-let inputFizz = 15
+
 
 const fizzbuzz = (inputFizz) => {
     if (inputFizz % 3 === 0 && inputFizz % 5 === 0) {
