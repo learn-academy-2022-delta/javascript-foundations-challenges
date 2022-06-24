@@ -173,7 +173,20 @@ const learn = {
 console.log(learn.cohorts[2022][3])
 
 // Write the code that uses destructuring to log the name of your cohort.
+const [delta] = learn.cohorts[2022].filter(value => value === "Delta")
+console.log(delta)
 
 
 // Create a function that takes an object like the one above and returns an array with a string of every cohort name and year.
+
+
 // // Output: ["2021 Alpha", "2021 Bravo", "2021 Charlie", "2021 Delta", "2021 Echo", "2022 Alpha", "2022 Bravo", "2022 Charlie", "2022 Delta", "2022 Echo", "2022 Foxtrot"]
+const learnCohort = (item) =>{
+ let year1 = learn.cohorts[2021].map(value => `2021 ${value}`)
+ let year2 = learn.cohorts[2022].map(value => `2022 ${value}`)
+ let combo = year1.concat(year2)
+
+ return combo
+ 
+}
+console.log(learnCohort(learn))
