@@ -47,14 +47,14 @@
 //   console.log(product.getData())
 
 // Write a function called totalWithTax that takes the product object as an argument and returns the total price of the chair that includes a 7% sales tax rounded to two decimals.
-const product = {
-    name: "chair",
-    price: 24.99,
-  totalWithTax: function () {
-     return this.price * 0.07 + this.price
-  }
-}
-console.log(product.totalWithTax())
+// const product = {
+//     name: "chair",
+//     price: 24.99,
+//   totalWithTax: function () {
+//      return this.price * 0.07 + this.price
+//   }
+// }
+// console.log(product.totalWithTax())
 
 // Consider this variable:
 
@@ -64,10 +64,45 @@ console.log(product.totalWithTax())
 //   type: "sandwich",
 //   ingredients: ["bread", "peanut butter", "banana"]
 // }
+
 // Write the code that accesses the ingredients property.
-// Write the code that access the third ingredient of the lunch object.
+//console.log(lunch.ingredients)
+//[ 'bread', 'peanut butter', 'banana' ]
+
+// Write the code that accesses the third ingredient of the lunch object.
+//console.log(lunch.ingredients[2])
+//banana
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// const lunch = {
+//   name: "PB and Banana",
+//   type: "sandwich",
+//   ingredients: ["bread", "peanut butter", "banana"],
+//   getData: function () {
+//     return `The ingredients for a ${this.name}` + ` sandwich are ${this.ingredients}.`
+//   }
+// }
+// console.log(lunch.getData())
+//The ingredients for a PB and Banana sandwich are bread,peanut butter,banana.
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+const lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"],
+  getData: function () {
+       
+  }
+}
+console.log(lunch.getData())
+
+
+
+
+
+
+
 // Consider this variable:
 
 // const animals = [
